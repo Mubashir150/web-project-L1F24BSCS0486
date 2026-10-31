@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register — Urban Fit</title>
+  <meta name="description" content="Create your Urban Fit account. Join thousands of streetwear enthusiasts for exclusive access." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg nav-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fs-3" href="index.html">URBAN FIT</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+        <ul class="navbar-nav gap-2 fw-semibold text-uppercase small">
+          <li class="nav-item"><a class="nav-link" href="index.html">New In</a></li><li class="nav-item"><a class="nav-link" href="#">Men</a></li><li class="nav-item"><a class="nav-link" href="#">Women</a></li><li class="nav-item"><a class="nav-link" href="media.html">Media</a></li><li class="nav-item"><a class="nav-link text-warning fw-bold" href="#">Sale</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center gap-3 fs-5">
+        <a href="#" aria-label="Search"><i class="bi bi-search"></i></a><a href="register.html" aria-label="Account"><i class="bi bi-person-fill"></i></a><a href="#" aria-label="Cart" class="position-relative"><i class="bi bi-bag"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-circle cart-badge">3</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header bg-dark text-white py-5">
+    <div class="container position-relative z-1">
+      <p class="text-uppercase small fw-bold tracking-2 text-warning mb-1">Create Account</p>
+      <h1 class="display-4 fw-bold mb-2">Join Urban Fit</h1>
+      <p class="text-white-50 mb-3">Get early drop access, member discounts &amp; free shipping on your first order.</p>
+      <nav aria-label="breadcrumb"><ol class="breadcrumb mb-0 small"><li class="breadcrumb-item"><a href="index.html" class="text-white-50">Home</a></li><li class="breadcrumb-item active text-white" aria-current="page">Register</li></ol></nav>
+    </div>
+  </header>
+
+  <!-- Registration Section -->
+  <main class="container py-5">
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <div class="card border shadow-sm p-4 rounded-0 bg-white">
+          <form id="register-form" novalidate>
+            <!-- Section 1: Personal Info -->
+            <h2 class="form-section-title h5 fw-bold mb-1">Personal Info</h2>
+            <p class="form-text text-muted">Tell us about yourself. Fields marked * are required.</p>
+            <div class="row g-3">
+              <div class="col-sm-6"><label class="form-label required-label" for="first-name">First Name</label><div class="input-wrap"><input type="text" class="form-control" id="first-name" name="first_name" placeholder="e.g. Jordan" required minlength="2" maxlength="30" autocomplete="given-name" /><i class="bi bi-person input-icon"></i></div><div class="form-text small">Min 2 characters, max 30.</div></div>
+              <div class="col-sm-6"><label class="form-label required-label" for="last-name">Last Name</label><div class="input-wrap"><input type="text" class="form-control" id="last-name" name="last_name" placeholder="e.g. Smith" required minlength="2" maxlength="30" autocomplete="family-name" /><i class="bi bi-person input-icon"></i></div><div class="form-text small">Min 2 characters, max 30.</div></div>
+              <div class="col-12"><label class="form-label required-label" for="email">Email Address</label><div class="input-wrap"><input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required autocomplete="email" /><i class="bi bi-envelope input-icon"></i></div><div class="form-text small">We'll send order confirmations here.</div></div>
+              <div class="col-sm-6"><label class="form-label required-label" for="password">Password</label><div class="input-wrap"><input type="password" class="form-control" id="password" name="password" placeholder="Min 8 characters" required minlength="8" maxlength="64" autocomplete="new-password" /><i class="bi bi-lock input-icon"></i></div><div class="form-text small">8–64 characters.</div></div>
+              <div class="col-sm-6"><label class="form-label required-label" for="confirm-password">Confirm Password</label><div class="input-wrap"><input type="password" class="form-control" id="confirm-password" name="confirm_password" placeholder="Repeat password" required minlength="8" maxlength="64" autocomplete="new-password" /><i class="bi bi-lock-fill input-icon"></i></div><div class="form-text small">Must match password above.</div></div>
+              <div class="col-sm-6"><label class="form-label required-label" for="dob">Date of Birth</label><div class="input-wrap"><input type="date" class="form-control" id="dob" name="dob" required min="1900-01-01" max="2010-12-31" /></div><div class="form-text small">Must be 16+ to register.</div></div>
+              <div class="col-sm-6"><label class="form-label required-label" for="age">Age</label><div class="input-wrap"><input type="number" class="form-control" id="age" name="age" placeholder="e.g. 22" required min="16" max="110" /><i class="bi bi-hash input-icon"></i></div><div class="form-text small">Between 16 and 110.</div></div>
+            </div>
+
+            <div class="form-divider" data-label="Contact &amp; Preferences"></div>
+            <!-- Section 2: Contact & Preferences -->
+            <h2 class="form-section-title h5 fw-bold mb-1">Contact &amp; Preferences</h2>
+            <p class="form-text text-muted">Help us personalise your streetwear recommendations.</p>
+            <div class="row g-3">
+              <div class="col-12"><label class="form-label" for="website">Website / Social Link <span class="text-muted small">(optional)</span></label><div class="input-wrap"><input type="url" class="form-control" id="website" name="website" placeholder="https://instagram.com/yourhandle" /><i class="bi bi-link-45deg input-icon"></i></div><div class="form-text small">Must start with https://</div></div>
+              <div class="col-sm-6"><label class="form-label required-label" for="gender">Gender</label><select class="form-select" id="gender" name="gender" required><option value="" disabled selected>Select gender…</option><option value="male">Male</option><option value="female">Female</option><option value="non-binary">Non-binary</option><option value="prefer-not">Prefer not to say</option></select></div>
+              <div class="col-sm-6"><label class="form-label required-label" for="country">Country</label><select class="form-select" id="country" name="country" required><option value="" disabled>Select country…</option><option value="pk" selected>Pakistan</option><option value="us">United States</option><option value="gb">United Kingdom</option><option value="ae">UAE</option><option value="ca">Canada</option></select></div>
+              <div class="col-sm-6"><label class="form-label" for="contact-time">Preferred Contact Time</label><input type="time" class="form-control" id="contact-time" name="contact_time" min="09:00" max="21:00" /><div class="form-text small">Between 09:00 and 21:00.</div></div>
+              <div class="col-sm-6"><label class="form-label" for="fav-color">Favourite Colour</label><div class="d-flex align-items-center gap-2"><input type="color" class="form-control form-control-color" id="fav-color" name="fav_color" value="#c9a96e" title="Pick colour" /><span class="small text-muted">We'll show items in shades you love.</span></div></div>
+              <div class="col-12"><label class="form-label" for="budget">Monthly Style Budget: <strong id="budget-val" class="text-warning">$100</strong></label><input type="range" class="form-range" id="budget" name="budget" min="0" max="500" step="10" value="100" /><div class="d-flex justify-content-between small text-muted"><span>$0</span><span>$250</span><span>$500</span></div></div>
+              <div class="col-12"><label class="form-label required-label" for="bio">Tell Us About Your Style</label><textarea class="form-control" id="bio" name="bio" rows="3" placeholder="Describe your style, favourite brands, aesthetics…" required minlength="20" maxlength="500"></textarea><div class="form-text small">20–500 characters.</div></div>
+            </div>
+
+            <div class="form-divider" data-label="Size &amp; Membership"></div>
+            <!-- Section 3: Size & Referral -->
+            <h2 class="form-section-title h5 fw-bold mb-1">Size &amp; Membership</h2>
+            <p class="form-text text-muted">Select your size and review pre-applied codes.</p>
+            <div class="row g-3">
+              <div class="col-12"><label class="form-label required-label d-block">Clothing Size</label><div class="d-flex flex-wrap gap-3"><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="size" id="size-xs" value="XS" required><label class="form-check-label" for="size-xs">XS</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="size" id="size-s" value="S"><label class="form-check-label" for="size-s">S</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="size" id="size-m" value="M" checked><label class="form-check-label" for="size-m">M</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="size" id="size-l" value="L"><label class="form-check-label" for="size-l">L</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="size" id="size-xl" value="XL"><label class="form-check-label" for="size-xl">XL</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="size" id="size-xxl" value="XXL"><label class="form-check-label" for="size-xxl">XXL</label></div></div></div>
+              <div class="col-sm-6"><label class="form-label" for="referral">Referral Code</label><div class="input-wrap"><input type="text" class="form-control" id="referral" name="referral" value="URBANFIT10" readonly /><i class="bi bi-ticket-perforated input-icon"></i></div><div class="form-text small">Pre-applied 10% discount code.</div></div>
+              <div class="col-sm-6"><label class="form-label" for="membership">Membership Level</label><div class="input-wrap"><input type="text" class="form-control" id="membership" name="membership" value="Standard Member" disabled /><i class="bi bi-award input-icon"></i></div><div class="form-text small">Upgraded automatically upon purchase.</div></div>
+              <div class="col-12"><label class="form-label" for="profile-photo">Profile Photo <span class="text-muted small">(optional)</span></label><div class="file-drop-zone"><i class="bi bi-cloud-arrow-up fs-2 text-muted"></i><p class="mb-1 small">Drag &amp; drop your photo, or <strong class="text-warning">browse files</strong></p><p class="small text-muted mb-0">JPG, PNG, WEBP — max 2MB</p><input type="file" id="profile-photo" name="profile_photo" accept=".jpg,.jpeg,.png,.webp" /></div></div>
+            </div>
+
+            <div class="form-divider" data-label="Agreements"></div>
+            <!-- Section 4: Checkboxes -->
+            <div class="d-flex flex-column gap-2 mb-4">
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="chk-terms" name="terms" required /><label class="form-check-label small" for="chk-terms">I agree to the <a href="#" class="text-warning text-decoration-underline">Terms &amp; Conditions</a> and <a href="#" class="text-warning text-decoration-underline">Privacy Policy</a> *</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="chk-newsletter" name="newsletter" checked /><label class="form-check-label small" for="chk-newsletter">Send me exclusive streetwear drops, VIP sales, and style inspiration.</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="chk-sms" name="sms" /><label class="form-check-label small" for="chk-sms">Receive SMS notifications for rapid-fire drops.</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="chk-beta" name="beta" disabled /><label class="form-check-label small text-muted" for="chk-beta">Join Beta Testers Club <em>(Registration currently full)</em></label></div>
+            </div>
+
+            <button type="submit" class="btn btn-dark w-100 py-3 fw-bold text-uppercase rounded-0" id="submit-btn">Create My Account →</button>
+            <p class="small text-center text-muted mt-3 mb-0">Already have an account? <a href="#" class="text-warning fw-semibold">Sign in here</a></p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Info Panel Column -->
+      <div class="col-lg-5">
+        <div class="card bg-dark text-white border-0 p-4 rounded-0 h-100 info-panel">
+          <p class="text-uppercase small fw-bold text-warning mb-1">Member Benefits</p>
+          <h2 class="h3 fw-bold mb-2">WHY JOIN URBAN FIT?</h2>
+          <p class="small text-white-50">Create a free account and unlock exclusive perks from day one.</p>
+          <ul class="mt-4">
+            <li><div class="perk-icon"><i class="bi bi-lightning-charge-fill"></i></div><div><strong>Early Drop Access</strong><p class="small text-white-50 mb-0">Shop new releases before public access.</p></div></li>
+            <li><div class="perk-icon"><i class="bi bi-percent"></i></div><div><strong>Member Discounts</strong><p class="small text-white-50 mb-0">Exclusive codes delivered straight to your inbox.</p></div></li>
+            <li><div class="perk-icon"><i class="bi bi-truck"></i></div><div><strong>Free First Shipping</strong><p class="small text-white-50 mb-0">No minimum spend on your first order.</p></div></li>
+            <li><div class="perk-icon"><i class="bi bi-arrow-repeat"></i></div><div><strong>Easy Returns</strong><p class="small text-white-50 mb-0">30-day hassle-free returns on all products.</p></div></li>
+            <li><div class="perk-icon"><i class="bi bi-star-fill"></i></div><div><strong>Loyalty Points</strong><p class="small text-white-50 mb-0">Earn points on every streetwear purchase.</p></div></li>
+            <li><div class="perk-icon"><i class="bi bi-headset"></i></div><div><strong>24/7 Priority Support</strong><p class="small text-white-50 mb-0">Dedicated assistance anytime you need it.</p></div></li>
+          </ul>
+          <div class="mt-auto pt-3"><a href="index.html" class="small text-warning fw-semibold">← Back to Shop</a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <p class="footer-brand h4 mb-2">URBAN FIT</p><p class="small text-white-50">Premium streetwear for bold living. Quality crafted for modern urban lifestyle.</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="btn btn-outline-secondary btn-sm rounded-circle"><i class="bi bi-instagram"></i></a><a href="#" class="btn btn-outline-secondary btn-sm rounded-circle"><i class="bi bi-tiktok"></i></a><a href="#" class="btn btn-outline-secondary btn-sm rounded-circle"><i class="bi bi-twitter-x"></i></a><a href="#" class="btn btn-outline-secondary btn-sm rounded-circle"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6"><p class="small fw-bold text-uppercase mb-2">Shop</p><ul class="list-unstyled small text-white-50 footer-links"><li><a href="#">New In</a></li><li><a href="#">Men</a></li><li><a href="#">Women</a></li><li><a href="#">Sale</a></li></ul></div>
+        <div class="col-lg-2 col-md-3 col-6"><p class="small fw-bold text-uppercase mb-2">Help</p><ul class="list-unstyled small text-white-50 footer-links"><li><a href="#">FAQ</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">Contact</a></li></ul></div>
+        <div class="col-lg-2 col-md-3 col-6"><p class="small fw-bold text-uppercase mb-2">Pages</p><ul class="list-unstyled small text-white-50 footer-links"><li><a href="index.html">Home</a></li><li><a href="media.html">Media</a></li><li><a href="register.html">Register</a></li></ul></div>
+        <div class="col-lg-3 col-md-3">
+          <p class="small fw-bold text-uppercase mb-2">Newsletter</p><p class="small text-white-50 mb-2">Get 10% off your first order.</p>
+          <div class="input-group"><input type="email" class="form-control form-control-sm bg-secondary text-white border-secondary" placeholder="Your email" /><button class="btn btn-warning btn-sm fw-bold">Join</button></div>
+        </div>
+      </div>
+      <div class="border-top border-secondary mt-4 pt-3 d-flex flex-wrap justify-content-between small text-white-50"><span>&copy; 2026 Urban Fit. All rights reserved.</span><span>Privacy Policy &nbsp;|&nbsp; Terms of Service</span></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
