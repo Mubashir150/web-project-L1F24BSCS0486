@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media — Urban Fit</title>
+    <meta
+      name="description"
+      content="Urban Fit Media — Explore our collection imagery, lookbook videos, soundscapes, and product data."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg nav-custom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fs-3" href="index.html">URBAN FIT</a>
+        <button
+          class="navbar-toggler border-0"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navMenu"
+        >
+          <ul class="navbar-nav gap-2 fw-semibold text-uppercase small">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">New In</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="media.html">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning fw-bold" href="#">Sale</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center gap-3 fs-5">
+          <a href="#" aria-label="Search"><i class="bi bi-search"></i></a>
+          <a href="register.html" aria-label="Account"
+            ><i class="bi bi-person"></i
+          ></a>
+          <a href="#" aria-label="Cart" class="position-relative"
+            ><i class="bi bi-bag"></i
+            ><span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-circle cart-badge"
+              >3</span
+            ></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-header bg-dark text-white py-5">
+      <div class="container">
+        <p class="eyebrow">Urban Fit</p>
+        <h1 class="display-4 fw-bold mb-2">Media Hub</h1>
+        <p class="text-white-50 mb-3">
+          Imagery, video lookbooks, audio soundscapes &amp; product data — all
+          in one place.
+        </p>
+        <ol class="breadcrumb mb-0 small">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="text-white-50">Home</a>
+          </li>
+          <li class="breadcrumb-item active text-white" aria-current="page">
+            Media
+          </li>
+        </ol>
+      </div>
+    </header>
+
+    <!-- Images -->
+    <section class="py-5" id="images">
+      <div class="container">
+        <p class="eyebrow">Visual Collection</p>
+        <h2 class="sec-title h3 fw-bold mb-1">Image Gallery</h2>
+        <div class="bar"></div>
+        <p class="text-muted small mb-4">
+          Click thumbnails to view full size. Images marked with gold accents
+          are featured.
+        </p>
+        <div class="row g-3">
+          <div class="col-lg-7">
+            <div class="gallery-main-wrap h-100">
+              <img
+                id="main-gallery-img"
+                alt="Featured Winter Editorial"
+                src="https://plus.unsplash.com/premium_photo-1671658222199-7061b54d29dd?q=80&w=686&auto=format&fit=crop"
+              />
+            </div>
+            <p class="small text-muted mt-2 mb-0">
+              <strong>Winter Essentials Drop 2026</strong> — Campaign shoot,
+              natural urban light.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="row g-2">
+              <div class="col-6">
+                <div class="gallery-thumb-wrap">
+                  <img
+                    alt="Hoodie Look"
+                    src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery-thumb-wrap">
+                  <img
+                    alt="Sneakers"
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery-thumb-wrap">
+                  <img
+                    alt="Varsity Jacket"
+                    src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery-thumb-wrap">
+                  <img
+                    alt="Puffer Vest"
+                    src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80"
+                  />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="gallery-thumb-wrap" style="aspect-ratio: 2/1">
+                  <img
+                    alt="Shop The Look Wide"
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section class="py-5 bg-white border-top border-bottom" id="video">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <div class="video-wrap">
+              <video
+                id="lookbook-video"
+                controls
+                preload="metadata"
+                aria-label="Urban Fit Lookbook Video"
+                class="w-100"
+              >
+                <source src="./assets/featured.mp4" type="video/mp4" />
+                Your browser does not support video.
+              </video>
+              <span class="video-badge">▶ Lookbook 2026</span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <p class="eyebrow">Summer Drop</p>
+            <h3 class="sec-title h4 fw-bold mb-2">Video Lookbook</h3>
+            <p class="text-muted small mb-3">
+              Watch the full Summer Essentials 2026 campaign — styled shoots,
+              exclusive drops, and behind-the-scenes streetwear fashion.
+            </p>
+            <div class="d-flex flex-wrap gap-3 small text-muted">
+              <span
+                ><i class="bi bi-clock me-1 text-warning"></i> 0:05 min</span
+              >
+              <span
+                ><i class="bi bi-camera-video me-1 text-warning"></i> HD
+                1080p</span
+              >
+              <span><i class="bi bi-eye me-1 text-warning"></i> 24K views</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audio -->
+    <section class="py-5" id="audio">
+      <div class="container">
+        <p class="eyebrow">Sound &amp; Vibes</p>
+        <h2 class="sec-title h3 fw-bold mb-1">Audio Collection</h2>
+        <div class="bar"></div>
+        <p class="text-muted small mb-4">
+          Our curated fitting room soundscapes, promo jingles, and store
+          background music.
+        </p>
+        <div class="row g-3">
+          <div class="col-12 col-md-12">
+            <div
+              class="card p-3 shadow-sm rounded-0 flex-row align-items-center gap-3"
+            >
+              <div class="audio-art">
+                <i class="bi bi-music-note-beamed"></i>
+              </div>
+              <div class="flex-grow-1">
+                <span class="badge bg-dark text-warning mb-1">Ambient</span>
+                <h5 class="h6 fw-bold mb-1">Urban Drift — Ambient Mix</h5>
+                <p class="small text-muted mb-2">
+                  Lo-fi streetwear vibes for the fitting room. 3 min 22 sec
+                </p>
+                <audio controls class="w-100">
+                  <source
+                    src="./assets/Daydreams-chosic.com_.mp3"
+                    type="audio/mpeg"
+                  />
+                </audio>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="card p-3 shadow-sm rounded-0 flex-row align-items-center gap-3 h-100"
+            >
+              <div class="audio-art"><i class="bi bi-megaphone"></i></div>
+              <div class="flex-grow-1">
+                <span class="badge bg-dark text-warning mb-1">Promo</span>
+                <h5 class="h6 fw-bold mb-1">Summer Sale Jingle</h5>
+                <p class="small text-muted mb-2">
+                  Official 30-second promo broadcast spot.
+                </p>
+                <audio controls class="w-100">
+                  <source src="./assets/promo.mp3" type="audio/mpeg" />
+                </audio>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="card p-3 shadow-sm rounded-0 flex-row align-items-center gap-3 h-100"
+            >
+              <div class="audio-art"><i class="bi bi-vinyl"></i></div>
+              <div class="flex-grow-1">
+                <span class="badge bg-dark text-warning mb-1">BGM</span>
+                <h5 class="h6 fw-bold mb-1">Store Background Loop</h5>
+                <p class="small text-muted mb-2">
+                  Seamless looping background groove. 3 min.
+                </p>
+                <audio controls class="w-100">
+                  <source
+                    src="./assets/Daydreams-chosic.com_.mp3"
+                    type="audio/mpeg"
+                  />
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lists -->
+    <section class="py-5 bg-white border-top border-bottom" id="lists">
+      <div class="container">
+        <p class="eyebrow">Collections &amp; Rankings</p>
+        <h2 class="sec-title h3 fw-bold mb-1">Featured Lists</h2>
+        <div class="bar"></div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card shadow-sm p-4 rounded-0 h-100">
+              <p class="eyebrow">
+                <i class="bi bi-list-ul me-1"></i>Unordered List
+              </p>
+              <h3 class="h5 fw-bold mb-3">What's Trending Now</h3>
+              <ul class="styled-ul text-muted">
+                <li>Oversized Hoodies — Street staple</li>
+                <li>Bucket Hats — Classic urban accessory</li>
+                <li>White Low-top Sneakers — Clean &amp; versatile</li>
+                <li>Varsity Jackets — Collegiate revival</li>
+                <li>Puffer Vests — Layering essential</li>
+                <li>Cargo Trousers — Utility fashion</li>
+                <li>Ribbed Beanies — Cold-weather staple</li>
+                <li>Graphic Tees — Self-expression basics</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card shadow-sm p-4 rounded-0 h-100">
+              <p class="eyebrow">
+                <i class="bi bi-list-ol me-1"></i>Ordered List
+              </p>
+              <h3 class="h5 fw-bold mb-3">Top 8 Best Sellers</h3>
+              <ol class="styled-ol text-muted">
+                <li>CHAOTIC Oversized Hoodie — $59.99</li>
+                <li>Classic White Sneakers — $49.99</li>
+                <li>Brown Varsity Jacket — $79.99</li>
+                <li>Beige Puffer Vest — $69.99</li>
+                <li>Urban Cargo Pants — $54.99</li>
+                <li>Ribbed Knit Beanie — $24.99</li>
+                <li>Essential Graphic Tee — $34.99</li>
+                <li>Bucket Hat (Washed) — $29.99</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Table -->
+    <section class="py-5" id="table">
+      <div class="container">
+        <p class="eyebrow">Stock &amp; Pricing</p>
+        <h2 class="sec-title h3 fw-bold mb-1">Product Data Table</h2>
+        <div class="bar"></div>
+        <div class="table-responsive shadow-sm">
+          <table class="table table-hover align-middle mb-0 bg-white">
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>SKU</th>
+                <th>Size Range</th>
+                <th>Rating</th>
+                <th>Stock Status</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="fw-semibold">Classic White Sneakers</td>
+                <td>Footwear</td>
+                <td class="text-muted small">UF-SNK-001</td>
+                <td>UK 6 – 12</td>
+                <td class="text-warning">★★★★★</td>
+                <td><span class="badge bg-success">In Stock</span></td>
+                <td class="fw-bold">$49.99</td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">CHAOTIC Hoodie</td>
+                <td>Tops</td>
+                <td class="text-muted small">UF-HOD-002</td>
+                <td>XS – 3XL</td>
+                <td class="text-warning">★★★★★</td>
+                <td><span class="badge bg-success">In Stock</span></td>
+                <td class="fw-bold">$59.99</td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Beige Puffer Vest</td>
+                <td>Outerwear</td>
+                <td class="text-muted small">UF-VES-003</td>
+                <td>S – 2XL</td>
+                <td class="text-warning">★★★★☆</td>
+                <td>
+                  <span class="badge bg-warning text-dark">Low Stock</span>
+                </td>
+                <td class="fw-bold">$69.99</td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Brown Varsity Jacket</td>
+                <td>Outerwear</td>
+                <td class="text-muted small">UF-VAR-004</td>
+                <td>S – XL</td>
+                <td class="text-warning">★★★★☆</td>
+                <td><span class="badge bg-success">In Stock</span></td>
+                <td class="fw-bold">$79.99</td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Urban Cargo Pants</td>
+                <td>Bottoms</td>
+                <td class="text-muted small">UF-CGO-005</td>
+                <td>28 – 38 W</td>
+                <td class="text-warning">★★★☆☆</td>
+                <td><span class="badge bg-success">In Stock</span></td>
+                <td class="fw-bold">$54.99</td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Ribbed Knit Beanie</td>
+                <td>Accessories</td>
+                <td class="text-muted small">UF-BNE-006</td>
+                <td>One Size</td>
+                <td class="text-warning">★★★★★</td>
+                <td>
+                  <span class="badge bg-warning text-dark">Low Stock</span>
+                </td>
+                <td class="fw-bold">$24.99</td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Essential Graphic Tee</td>
+                <td>Tops</td>
+                <td class="text-muted small">UF-TEE-007</td>
+                <td>XS – 3XL</td>
+                <td class="text-warning">★★★★☆</td>
+                <td><span class="badge bg-danger">Out of Stock</span></td>
+                <td class="fw-bold">$34.99</td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Bucket Hat (Washed)</td>
+                <td>Accessories</td>
+                <td class="text-muted small">UF-BKT-008</td>
+                <td>One Size</td>
+                <td class="text-warning">★★★☆☆</td>
+                <td><span class="badge bg-success">In Stock</span></td>
+                <td class="fw-bold">$29.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <p class="footer-brand h4 mb-2">URBAN FIT</p>
+            <p class="small text-white-50">
+              Premium streetwear for bold living. Quality crafted for modern
+              urban lifestyle.
+            </p>
+            <div class="d-flex gap-2 mt-3">
+              <a
+                href="#"
+                class="btn btn-outline-secondary btn-sm rounded-circle"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary btn-sm rounded-circle"
+                ><i class="bi bi-tiktok"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary btn-sm rounded-circle"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary btn-sm rounded-circle"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-6">
+            <p class="small fw-bold text-uppercase mb-2">Shop</p>
+            <ul class="list-unstyled small text-white-50 footer-links">
+              <li><a href="#">New In</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Sale</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 col-6">
+            <p class="small fw-bold text-uppercase mb-2">Media</p>
+            <ul class="list-unstyled small text-white-50 footer-links">
+              <li><a href="#images">Images</a></li>
+              <li><a href="#video">Video</a></li>
+              <li><a href="#audio">Audio</a></li>
+              <li><a href="#lists">Lists</a></li>
+              <li><a href="#table">Data Table</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 col-6">
+            <p class="small fw-bold text-uppercase mb-2">Pages</p>
+            <ul class="list-unstyled small text-white-50 footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="media.html">Media</a></li>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <p class="small fw-bold text-uppercase mb-2">Newsletter</p>
+            <p class="small text-white-50 mb-2">
+              Get 10% off your first order.
+            </p>
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control form-control-sm bg-secondary text-white border-secondary"
+                placeholder="Your email"
+              />
+              <button class="btn btn-warning btn-sm fw-bold">Join</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-top border-secondary mt-4 pt-3 d-flex flex-wrap justify-content-between small text-white-50"
+        >
+          <span>&copy; 2026 Urban Fit. All rights reserved.</span>
+          <span>Privacy Policy &nbsp;|&nbsp; Terms of Service</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

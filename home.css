@@ -1,25 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Bebas+Neue&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Bebas+Neue&display=swap');
+:root {
+  --accent: #c9a96e;
+  --accent2: #8b6914;
+  --dark: #1a1a1a;
+  --border: #e0ddd6;
+  --trans: all 0.2s ease;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #f5f3ef;
+  color: var(--dark);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--trans);
+}
+.brand-font,
+.navbar-brand,
+.hero-title,
+.sec-title,
+.footer-brand {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+}
 
-:root { --accent: #c9a96e; --accent2: #8b6914; --dark: #1a1a1a; --border: #e0ddd6; --trans: all .2s ease; }
-body { font-family: 'Outfit', sans-serif; background-color: #f5f3ef; color: var(--dark); }
-a { text-decoration: none; color: inherit; transition: var(--trans); }
-.brand-font, .navbar-brand, .hero-title, .sec-title, .footer-brand { font-family: 'Bebas Neue', cursive; letter-spacing: 2px; }
+.img-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: #edeae4;
+  border: 2px dashed #d0ccc4;
+  color: #9c9589;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+.hero-img-placeholder {
+  position: relative;
+  min-height: 420px;
+  width: 100%;
+  border-radius: 6px;
+}
 
-.img-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; background: #edeae4; border: 2px dashed #d0ccc4; color: #9c9589; font-size: .7rem; font-weight: 600; text-transform: uppercase; text-align: center; padding: 10px; }
-.hero-img-placeholder { position: relative; min-height: 420px; width: 100%; border-radius: 6px; }
-
-.nav-custom { background: #fff; border-bottom: 1px solid var(--border); }
-.nav-link.active, .nav-link:hover { color: var(--accent) !important; }
-.cart-badge { font-size: .6rem; width: 16px; height: 16px; background-color: var(--accent); }
-.hero-badge { position: absolute; top: 16px; right: 16px; width: 80px; height: 80px; background: #f5f3ef; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,.15); text-align: center; }
-.product-card { transition: var(--trans); }
-.product-card:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(0,0,0,.1) !important; }
-.product-img-wrap, .look-img-wrap { aspect-ratio: 1; position: relative; overflow: hidden; background: #edeae4; }
-.look-img-wrap { aspect-ratio: 3/4; }
-.look-overlay { position: absolute; inset: 0; background: transparent; display: flex; align-items: flex-end; padding: 12px; transition: var(--trans); }
-.look-img-wrap:hover .look-overlay { background: rgba(0,0,0,.35); }
-.look-img-wrap:hover .look-btn { opacity: 1 !important; transform: translateY(0) !important; }
-.btn-accent { background: var(--accent); color: #fff; font-weight: 700; border: none; }
-.btn-accent:hover { background: var(--accent2); color: #fff; }
-.footer-links a:hover { color: var(--accent); padding-left: 3px; }
+.nav-custom {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+.nav-link.active,
+.nav-link:hover {
+  color: var(--accent) !important;
+}
+.cart-badge {
+  font-size: 0.6rem;
+  width: 16px;
+  height: 16px;
+  background-color: var(--accent);
+}
+.hero-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 80px;
+  height: 80px;
+  background: #f5f3ef;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+.product-card {
+  transition: var(--trans);
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1) !important;
+}
+.product-img-wrap,
+.look-img-wrap {
+  aspect-ratio: 1;
+  position: relative;
+  overflow: hidden;
+  background: #edeae4;
+}
+.look-img-wrap {
+  aspect-ratio: 3/4;
+}
+.look-overlay {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  display: flex;
+  align-items: flex-end;
+  padding: 12px;
+  transition: var(--trans);
+}
+.look-img-wrap:hover .look-overlay {
+  background: rgba(0, 0, 0, 0.35);
+}
+.look-img-wrap:hover .look-btn {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.btn-accent {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+}
+.btn-accent:hover {
+  background: var(--accent2);
+  color: #fff;
+}
+.footer-links a:hover {
+  color: var(--accent);
+  padding-left: 3px;
+}
