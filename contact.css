@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Bebas+Neue&display=swap");
+
+:root {
+  --accent: #c9a96e;
+  --accent2: #8b6914;
+  --dark: #1a1a1a;
+  --border: #e0ddd6;
+  --trans: all 0.2s ease;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #f5f3ef;
+  color: var(--dark);
+}
+
+::selection {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--trans);
+}
+
+.navbar-brand,
+.page-header h1,
+.sec-title,
+.footer-brand {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+}
+
+.nav-custom {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--accent) !important;
+}
+
+.cart-badge {
+  font-size: 0.6rem;
+  width: 16px;
+  height: 16px;
+  background-color: var(--accent);
+}
+
+/* --- About Section (Flexbox Requirement) --- */
+.about-section {
+  background-color: #ffffff;
+  border-left: 4px solid var(--accent) !important;
+}
+
+.about-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-badge {
+  min-width: 120px;
+  height: 90px;
+  border-radius: 4px;
+}
+
+/* --- Info Cards Layout (CSS Grid Requirement) --- */
+.contact-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(201, 169, 110, 0.18);
+  color: var(--accent);
+}
+
+.contact-card {
+  transition: var(--trans);
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* --- Main Content Layout (CSS Grid Mixing) --- */
+.main-content-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.5rem;
+}
+
+.map-frame {
+  min-height: 380px;
+  border: 0;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(201, 169, 110, 0.25);
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+  padding-left: 3px;
+}
+
+/* --- Media Queries (Required for Rubric) --- */
+
+/* Tablet Breakpoint */
+@media (max-width: 992px) {
+  .main-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-frame {
+    min-height: 300px;
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  .about-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-badge {
+    width: 100%;
+  }
+
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

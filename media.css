@@ -6,7 +6,10 @@ a { text-decoration: none; color: inherit; transition: all .2s; }
 .navbar-brand, .page-header h1, .sec-title, .footer-brand { font-family: 'Bebas Neue', cursive; letter-spacing: 2px; }
 .nav-custom { background: #fff; border-bottom: 1px solid var(--border); }
 .cart-badge { font-size: .6rem; width: 16px; height: 16px; background: var(--accent); }
-
+.nav-link.active,
+.nav-link:hover {
+  color: var(--accent) !important;
+}
 /* Section headings */
 .eyebrow { text-transform: uppercase; font-size: .875em; font-weight: 700; color: var(--bs-warning); margin-bottom: .25rem; }
 .bar { width: 40px; height: 2px; background: var(--bs-warning); margin-bottom: 1rem; }
